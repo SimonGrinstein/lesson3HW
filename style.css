@@ -1,3 +1,4 @@
+/* Основные стили для body */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -8,6 +9,7 @@ body {
     background-color: #e0f7fa; /* Светлый фон */
 }
 
+/* Стили для контейнера счётчика */
 .counter-container {
     text-align: center;
     background-color: #ffffff; /* Белый фон контейнера */
@@ -17,17 +19,48 @@ body {
     width: 300px;
 }
 
+/* Анимация увеличения счётчика */
+@keyframes increase {
+    from {
+        transform: scale(1);
+        color: #00796b; /* Исходный цвет */
+    }
+    to {
+        transform: scale(1.2); /* Увеличиваем размер */
+        color: #4caf50; /* Цвет при увеличении */
+    }
+}
+
+/* Анимация уменьшения счётчика */
+@keyframes decrease {
+    from {
+        transform: scale(1);
+        color: #00796b; /* Исходный цвет */
+    }
+    to {
+        transform: scale(0.8); /* Уменьшаем размер */
+        color: #f44336; /* Цвет при уменьшении */
+    }
+}
+
+/* Стили для значения счётчика */
 #counter-value {
     font-size: 4rem; /* Размер текста счётчика */
     margin: 20px 0;
     color: #00796b; /* Темный зелёный цвет текста */
+    transition: color 0.3s ease; /* Плавный переход цвета */
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
+/* Применяем классы для анимации */
+.increase {
+    animation: increase 0.3s forwards; /* Анимация увеличения */
 }
 
+.decrease {
+    animation: decrease 0.3s forwards; /* Анимация уменьшения */
+}
+
+/* Стили для кнопок */
 #plus, #minus {
     width: 100px;
     padding: 15px;
@@ -38,6 +71,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Стили для кнопки увеличения */
 #plus {
     background-color: #4caf50; /* Зелёный для кнопки увеличения */
     color: white;
@@ -47,6 +81,7 @@ body {
     background-color: #388e3c; /* Темно-зелёный при наведении */
 }
 
+/* Стили для кнопки уменьшения */
 #minus {
     background-color: #f44336; /* Красный для кнопки уменьшения */
     color: white;
@@ -55,3 +90,5 @@ body {
 #minus:hover {
     background-color: #d32f2f; /* Темно-красный при наведении */
 }
+
+/* Добавьте дополнительные стили по мере необходимости */
