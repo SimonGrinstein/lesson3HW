@@ -10,12 +10,12 @@ const minus = document.getElementById("minus");
 
 plus.onclick = () => {
     counter++;
-    console.log("counter plus:" + counter);
+    //console.log("counter plus:" + counter);
     document.getElementById("counter").innerHTML= counter;
 }
 
 minus.onclick = () => {
     counter--;
-    console.log("counter minus:" + counter);
+    //console.log("counter minus:" + counter);
     document.getElementById("counter").innerHTML= counter;
 }
