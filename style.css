@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Светлый фон */
+}
+
+.counter-container {
+    text-align: center;
+    background-color: #ffffff; /* Белый фон контейнера */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    width: 300px;
+}
+
+#counter-value {
+    font-size: 4rem; /* Размер текста счётчика */
+    margin: 20px 0;
+    color: #00796b; /* Темный зелёный цвет текста */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#plus, #minus {
+    width: 100px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#plus {
+    background-color: #4caf50; /* Зелёный для кнопки увеличения */
+    color: white;
+}
+
+#plus:hover {
+    background-color: #388e3c; /* Темно-зелёный при наведении */
+}
+
+#minus {
+    background-color: #f44336; /* Красный для кнопки уменьшения */
+    color: white;
+}
+
+#minus:hover {
+    background-color: #d32f2f; /* Темно-красный при наведении */
+}
